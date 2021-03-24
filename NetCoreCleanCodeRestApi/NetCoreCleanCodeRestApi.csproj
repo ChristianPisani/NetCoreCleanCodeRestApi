@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\NetCoreCleanCode.Application\NetCoreCleanCode.Application.csproj" />
+      <ProjectReference Include="..\NetCoreCleanCode.Domain\NetCoreCleanCode.Domain.csproj" />
+      <ProjectReference Include="..\NetCoreCleanCode.Infrastructure\NetCoreCleanCode.Infrastructure.csproj" />
+    </ItemGroup>
+
+</Project>
