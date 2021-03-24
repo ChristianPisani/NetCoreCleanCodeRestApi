@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreCleanCodeRestApi", "NetCoreCleanCodeRestApi\NetCoreCleanCodeRestApi.csproj", "{05CECC23-F3BA-44ED-8751-C8F40C826139}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreCleanCode.Domain", "NetCoreCleanCode.Domain\NetCoreCleanCode.Domain.csproj", "{91573A0E-4CC4-4157-86DD-649D303223C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreCleanCode.Infrastructure", "NetCoreCleanCode.Infrastructure\NetCoreCleanCode.Infrastructure.csproj", "{B250269F-98A7-4665-AF80-292487213961}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreCleanCode.Application", "NetCoreCleanCode.Application\NetCoreCleanCode.Application.csproj", "{EFAFCA15-2158-403D-A14C-510C6BE4DB64}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05CECC23-F3BA-44ED-8751-C8F40C826139}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05CECC23-F3BA-44ED-8751-C8F40C826139}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05CECC23-F3BA-44ED-8751-C8F40C826139}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05CECC23-F3BA-44ED-8751-C8F40C826139}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91573A0E-4CC4-4157-86DD-649D303223C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91573A0E-4CC4-4157-86DD-649D303223C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91573A0E-4CC4-4157-86DD-649D303223C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91573A0E-4CC4-4157-86DD-649D303223C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B250269F-98A7-4665-AF80-292487213961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B250269F-98A7-4665-AF80-292487213961}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B250269F-98A7-4665-AF80-292487213961}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B250269F-98A7-4665-AF80-292487213961}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFAFCA15-2158-403D-A14C-510C6BE4DB64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFAFCA15-2158-403D-A14C-510C6BE4DB64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFAFCA15-2158-403D-A14C-510C6BE4DB64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFAFCA15-2158-403D-A14C-510C6BE4DB64}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
