@@ -5,7 +5,7 @@ using NetCoreCleanCode.Domain.TodoList.Models;
 
 namespace NetCoreCleanCode.Application.Queries.TodoLists.GetTodoLists
 {
-    public class GetTodolistsQueryHandler : QueryHandler<GetTodoListsQuery, IEnumerable<TodoList>>
+    public class GetTodolistsQueryHandler : IQueryHandler<GetTodoListsQuery, IEnumerable<TodoList>>
     {
         private readonly IDataRepository<IEnumerable<TodoList>> _todoListService;
 
@@ -14,7 +14,7 @@ namespace NetCoreCleanCode.Application.Queries.TodoLists.GetTodoLists
             _todoListService = todoListService;
         }
         
-        public override async Task<IEnumerable<TodoList>> Handle(GetTodoListsQuery query)
+        public async Task<IEnumerable<TodoList>> Handle(GetTodoListsQuery query)
         {
             return await _todoListService.Get();
         }

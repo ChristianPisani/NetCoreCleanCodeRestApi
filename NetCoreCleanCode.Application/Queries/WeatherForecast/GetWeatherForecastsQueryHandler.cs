@@ -3,7 +3,7 @@ using NetCoreCleanCode.Application.Interfaces;
 
 namespace NetCoreCleanCode.Application.Queries.WeatherForecast
 {
-    public class GetWeatherForecastsQueryHandler : QueryHandler<GetWeatherForecastsQuery, Domain.WeatherForecast.Models.WeatherForecast>
+    public class GetWeatherForecastsQueryHandler : IQueryHandler<GetWeatherForecastsQuery, Domain.WeatherForecast.Models.WeatherForecast>
      {
         private readonly IApiService<Domain.WeatherForecast.Models.WeatherForecast> _apiService;
         
@@ -12,7 +12,7 @@ namespace NetCoreCleanCode.Application.Queries.WeatherForecast
             _apiService = apiService;
         }
         
-        public override async Task<Domain.WeatherForecast.Models.WeatherForecast> Handle(GetWeatherForecastsQuery query)
+        public async Task<Domain.WeatherForecast.Models.WeatherForecast> Handle(GetWeatherForecastsQuery query)
         {
             return await _apiService.Get();
         }

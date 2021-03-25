@@ -1,19 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using NetCoreCleanCode.Application.Interfaces;
 
 namespace NetCoreCleanCode.Application.Services
 {
     public class MediatorService : IMediatorService
     {
-        private readonly IEnumerable<IQueryHandler<Type, Type>> _queryHandlers;
         private readonly IQueryHandlerFactory _queryHandlerFactory;
 
-        public MediatorService(IEnumerable<IQueryHandler<Type, Type>> queryHandlers,
-            IQueryHandlerFactory queryHandlerFactory)
+        public MediatorService(IQueryHandlerFactory queryHandlerFactory)
         {
-            _queryHandlers = queryHandlers;
             _queryHandlerFactory = queryHandlerFactory;
         }
 

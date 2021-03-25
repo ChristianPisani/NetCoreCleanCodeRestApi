@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreCleanCode.Infrastruc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreCleanCode.Application", "NetCoreCleanCode.Application\NetCoreCleanCode.Application.csproj", "{EFAFCA15-2158-403D-A14C-510C6BE4DB64}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreCleanCode.Tests", "NetCoreCleanCode.Tests\NetCoreCleanCode.Tests.csproj", "{93B35FB5-1461-469F-A9C1-9E0A57466DCF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{EFAFCA15-2158-403D-A14C-510C6BE4DB64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFAFCA15-2158-403D-A14C-510C6BE4DB64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFAFCA15-2158-403D-A14C-510C6BE4DB64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93B35FB5-1461-469F-A9C1-9E0A57466DCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93B35FB5-1461-469F-A9C1-9E0A57466DCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93B35FB5-1461-469F-A9C1-9E0A57466DCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93B35FB5-1461-469F-A9C1-9E0A57466DCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

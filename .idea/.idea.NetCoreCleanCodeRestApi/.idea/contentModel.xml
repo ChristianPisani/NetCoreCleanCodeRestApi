@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
+    <e p="C:\Users\christian.thorvik\.nuget\packages\microsoft.net.test.sdk\16.5.0\build\netcoreapp2.1" t="Include">
+      <e p="Microsoft.NET.Test.Sdk.Program.cs" t="Include" />
+    </e>
+    <e p="C:\Users\christian.thorvik\.nuget\packages\microsoft.testplatform.testhost\16.5.0\build\netcoreapp2.1\x64\testhost.dll" t="Include" />
+    <e p="C:\Users\christian.thorvik\.nuget\packages\microsoft.testplatform.testhost\16.5.0\build\netcoreapp2.1\x64\testhost.exe" t="Include" />
+    <e p="C:\Users\christian.thorvik\.nuget\packages\nunit3testadapter\3.16.1\build\netcoreapp2.1\nunit.engine.api.dll" t="Include" />
+    <e p="C:\Users\christian.thorvik\.nuget\packages\nunit3testadapter\3.16.1\build\netcoreapp2.1\nunit.engine.dll" t="Include" />
+    <e p="C:\Users\christian.thorvik\.nuget\packages\nunit3testadapter\3.16.1\build\netcoreapp2.1\NUnit3.TestAdapter.dll" t="Include" />
+    <e p="C:\Users\christian.thorvik\.nuget\packages\nunit3testadapter\3.16.1\build\netcoreapp2.1\NUnit3.TestAdapter.pdb" t="Include" />
     <e p="C:\Users\christian.thorvik\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
     <e p="C:\Users\christian.thorvik\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_NetCoreCleanCodeRestApi.-655062779.00" t="ExcludeRecursive" />
     <e p="C:\Users\christian.thorvik\RiderProjects\NetCoreCleanCodeRestApi" t="IncludeFlat">
@@ -93,6 +102,29 @@
           </e>
         </e>
       </e>
+      <e p="NetCoreCleanCode.Tests" t="IncludeRecursive">
+        <e p="Application" t="Include">
+          <e p="Queries" t="Include">
+            <e p="GetTodoLists" t="Include">
+              <e p="GetTodoListsQueryHandlerTests.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Infrastructure" t="Include">
+          <e p="TodoList" t="Include">
+            <e p="TodoListRepositoryTests.cs" t="Include" />
+          </e>
+        </e>
+        <e p="NetCoreCleanCode.Tests.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="NetCoreCleanCode.Tests.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
       <e p="NetCoreCleanCodeRestApi" t="IncludeRecursive">
         <e p="ApiDependencies.cs" t="Include" />
         <e p="appsettings.Development.json" t="Include" />
@@ -114,7 +146,6 @@
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
         </e>
-        <e p="README.md" t="Include" />
         <e p="Startup.cs" t="Include" />
       </e>
       <e p="NetCoreCleanCodeRestApi.sln" t="IncludeFlat" />

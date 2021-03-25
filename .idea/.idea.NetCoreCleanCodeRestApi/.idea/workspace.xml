@@ -6,25 +6,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3689a9d4-9469-4ebb-9651-1f24b2a01cd0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/NetCoreCleanCode.Application/Interfaces/IQueryHandlerFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NetCoreCleanCode.Application/Services/QueryHandlerFactoryService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NetCoreCleanCode.Domain/Common/Interfaces/ICoreModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetCoreCleanCode.Application/ApplicationDependencies.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCode.Application/ApplicationDependencies.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetCoreCleanCode.Application/Interfaces/IQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCode.Application/Interfaces/IQuery.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetCoreCleanCode.Tests/Application/Queries/GetTodoLists/GetTodoListsQueryHandlerTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetCoreCleanCode.Tests/Infrastructure/TodoList/TodoListRepositoryTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NetCoreCleanCodeRestApi/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NetCoreCleanCodeRestApi/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NetCoreCleanCodeRestApi/.idea/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NetCoreCleanCodeRestApi/.idea/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NetCoreCleanCodeRestApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NetCoreCleanCodeRestApi/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NetCoreCleanCode.Application/Interfaces/IQueryHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCode.Application/Interfaces/IQueryHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetCoreCleanCode.Application/Interfaces/Repositories/IExternalApiService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetCoreCleanCode.Application/NetCoreCleanCode.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCode.Application/NetCoreCleanCode.Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetCoreCleanCode.Application/Queries/WeatherForecast/GetWeatherForecastsQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCode.Application/Queries/WeatherForecast/GetWeatherForecastsQuery.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetCoreCleanCode.Application/Queries/TodoLists/GetTodoLists/GetTodolistsQueryHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCode.Application/Queries/TodoLists/GetTodoLists/GetTodolistsQueryHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NetCoreCleanCode.Application/Queries/WeatherForecast/GetWeatherForecastsQueryHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCode.Application/Queries/WeatherForecast/GetWeatherForecastsQueryHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NetCoreCleanCode.Application/Services/MediatorService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCode.Application/Services/MediatorService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetCoreCleanCode.Domain/NetCoreCleanCode.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCode.Domain/NetCoreCleanCode.Domain.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetCoreCleanCode.Domain/WeatherForecast/Models/Temperature.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCode.Domain/WeatherForecast/Models/Temperature.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetCoreCleanCode.Domain/WeatherForecast/Models/WeatherForecast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCode.Domain/WeatherForecast/Models/WeatherForecast.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetCoreCleanCode.Infrastructure/WeatherForecast/Services/WeatherForecastApiService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCode.Infrastructure/WeatherForecast/Services/WeatherForecastApiService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetCoreCleanCodeRestApi/ApiDependencies.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCodeRestApi/ApiDependencies.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetCoreCleanCodeRestApi/Controllers/WeatherForecastController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCodeRestApi/Controllers/WeatherForecastController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetCoreCleanCodeRestApi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCodeRestApi/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetCoreCleanCodeRestApi/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCodeRestApi/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetCoreCleanCodeRestApi.sln" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCodeRestApi.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,22 +60,26 @@
       <option value="$PROJECT_DIR$/NetCoreCleanCode.Application/Queries/TodoLists/GetTodoLists/GetTodoListsQuery.cs" />
       <option value="$PROJECT_DIR$/NetCoreCleanCode.Application/Queries/WeatherForecast/GetWeatherForecastsQuery.cs" />
       <option value="$PROJECT_DIR$/NetCoreCleanCode.Domain/WeatherForecast/Models/WeatherForecast.cs" />
-      <option value="$PROJECT_DIR$/NetCoreCleanCode.Application/Interfaces/IQueryHandler.cs" />
       <option value="$PROJECT_DIR$/NetCoreCleanCode.Application/Interfaces/Services/IMediatorService.cs" />
-      <option value="$PROJECT_DIR$/NetCoreCleanCode.Application/Queries/WeatherForecast/GetWeatherForecastsQueryHandler.cs" />
       <option value="$PROJECT_DIR$/NetCoreCleanCodeRestApi/Controllers/WeatherForecastController.cs" />
       <option value="$PROJECT_DIR$/NetCoreCleanCodeRestApi/Startup.cs" />
       <option value="$PROJECT_DIR$/NetCoreCleanCodeRestApi/Controllers/TodoListController.cs" />
-      <option value="$PROJECT_DIR$/NetCoreCleanCode.Application/Queries/TodoLists/GetTodoLists/GetTodolistsQueryHandler.cs" />
       <option value="$PROJECT_DIR$/NetCoreCleanCode.Application/Interfaces/Repositories/IDataRepository.cs" />
-      <option value="$PROJECT_DIR$/NetCoreCleanCode.Infrastructure/TodoList/Repositories/TodoListRepository.cs" />
       <option value="$PROJECT_DIR$/NetCoreCleanCode.Infrastructure/InfrastructureDependencies.cs" />
       <option value="$PROJECT_DIR$/NetCoreCleanCode.Infrastructure/TodoList/Services/TodoListService.cs" />
       <option value="$PROJECT_DIR$/NetCoreCleanCode.Application/Interfaces/IQueryHandlerFactory.cs" />
       <option value="$PROJECT_DIR$/NetCoreCleanCode.Application/Services/QueryHandlerFactoryService.cs" />
-      <option value="$PROJECT_DIR$/NetCoreCleanCode.Application/Services/MediatorService.cs" />
       <option value="$PROJECT_DIR$/NetCoreCleanCodeRestApi/ApiDependencies.cs" />
       <option value="$PROJECT_DIR$/NetCoreCleanCode.Application/ApplicationDependencies.cs" />
+      <option value="$PROJECT_DIR$/NetCoreCleanCode.Application/Services/MediatorService.cs" />
+      <option value="$PROJECT_DIR$/NetCoreCleanCode.Tests/Application/Queries/GetTodoListsTests.cs" />
+      <option value="$PROJECT_DIR$/NetCoreCleanCode.Tests/Application/Queries/GetTodoListsQueryHandlerTests.cs" />
+      <option value="$PROJECT_DIR$/NetCoreCleanCode.Application/Interfaces/IQueryHandler.cs" />
+      <option value="$PROJECT_DIR$/NetCoreCleanCode.Application/Queries/WeatherForecast/GetWeatherForecastsQueryHandler.cs" />
+      <option value="$PROJECT_DIR$/NetCoreCleanCode.Application/Queries/TodoLists/GetTodoLists/GetTodolistsQueryHandler.cs" />
+      <option value="$PROJECT_DIR$/NetCoreCleanCode.Infrastructure/TodoList/Repositories/TodoListRepository.cs" />
+      <option value="$PROJECT_DIR$/NetCoreCleanCode.Tests/Infrastructure/TodoList/TodoListRepositoryTests.cs" />
+      <option value="$PROJECT_DIR$/NetCoreCleanCode.Tests/Application/Queries/GetTodoLists/GetTodoListsQueryHandlerTests.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1qC8GpRCGDyNs7QOFHkmYopoQMF" />
