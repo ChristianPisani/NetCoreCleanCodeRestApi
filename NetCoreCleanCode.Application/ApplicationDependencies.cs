@@ -9,6 +9,7 @@ namespace NetCoreCleanCode.Application
         public static void ConfigureApplicationDependencies(this IServiceCollection services)
         {
             services.AddScoped<IMediatorService, MediatorService>();
+            services.AddScoped<IQueryHandlerFactory, QueryHandlerFactoryService>();
         }
     }
 }
