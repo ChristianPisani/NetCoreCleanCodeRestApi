@@ -1,17 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using NetCoreCleanCode.Application.Interfaces;
-using NetCoreCleanCode.Application.Interfaces.Repositories;
-using NetCoreCleanCode.Application.Queries.WeatherForecast;
-using NetCoreCleanCode.Application.Services;
-using NetCoreCleanCode.Domain.WeatherForecast.Models;
-using NetCoreCleanCode.Infrastructure.WeatherForecast.Services;
+using NetCoreCleanCode.Application;
+using NetCoreCleanCode.Infrastructure;
 
 namespace NetCoreCleanCodeRestApi
 {
@@ -24,7 +18,6 @@ namespace NetCoreCleanCodeRestApi
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
@@ -32,13 +25,12 @@ namespace NetCoreCleanCodeRestApi
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "NetCoreCleanCodeRestApi", Version = "v1" });
             });
-
-            services.AddScoped<IMediatorService, MediatorService>();
-            services.AddScoped<IExternalApiService<WeatherForecast>, WeatherForecastApiService>();
-            services.AddScoped(typeof(IQueryHandler<>), typeof(GetWeatherForecastsQueryHandler<>));
+            
+            services.ConfigureApplicationDependencies();
+            services.ConfigureInfrastructureDependencies();
+            services.ConfigureApiDependencies();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())

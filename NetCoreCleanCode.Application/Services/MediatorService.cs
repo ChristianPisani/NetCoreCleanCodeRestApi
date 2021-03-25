@@ -1,6 +1,5 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using NetCoreCleanCode.Application.Interfaces;
 
@@ -8,21 +7,30 @@ namespace NetCoreCleanCode.Application.Services
 {
     public class MediatorService : IMediatorService
     {
-        private readonly IEnumerable<IQueryHandler<IQuery<IEnumerable<object>>>> _queryHandlers;
+        private readonly IEnumerable<IQueryHandler<Type, Type>> _queryHandlers;
+        private readonly IQueryHandlerFactory _queryHandlerFactory;
 
-        public MediatorService(IEnumerable<IQueryHandler<IQuery<IEnumerable<object>>>> queryHandlers)
+        public MediatorService(IEnumerable<IQueryHandler<Type, Type>> queryHandlers,
+            IQueryHandlerFactory queryHandlerFactory)
         {
             _queryHandlers = queryHandlers;
+            _queryHandlerFactory = queryHandlerFactory;
         }
-        
-        public async Task<IEnumerable<T>> Send<T>(IQuery<IEnumerable<T>> query)
-        {
-            return await _queryHandlers.First().Handle(query);
-        }
-    }
 
-    public interface IMediatorService
-    {
-        Task<IEnumerable<T>> Send<T>(IQuery<IEnumerable<T>> query);
+        public async Task<TOut> Send<TQuery, TOut>(TQuery query) where TQuery : IQuery
+        {
+            var queryHandler = _queryHandlerFactory.CreateQueryHandler<TQuery, TOut>();
+
+            if (queryHandler == null)
+            {
+                // Log error
+
+                return default;
+            }
+
+            var result = await queryHandler.Handle(query);
+
+            return result;
+        }
     }
 }

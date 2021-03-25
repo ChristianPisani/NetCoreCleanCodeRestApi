@@ -1,8 +1,9 @@
 using System;
+using NetCoreCleanCode.Domain.Common.Interfaces;
 
 namespace NetCoreCleanCode.Domain.WeatherForecast.Models
 {
-    public class WeatherForecast
+    public class WeatherForecast : ICoreModel
     {
         public DateTime? Date { get; set; }
 

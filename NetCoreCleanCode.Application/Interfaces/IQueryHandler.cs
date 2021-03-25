@@ -1,14 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 
 namespace NetCoreCleanCode.Application.Interfaces
 {
-    public interface IQueryHandler<out TQuery>
+    public interface IQueryHandler<in TQuery, TOut>
     {
         Type QueryType { get; }
-        
-        Task<IEnumerable<T>> Handle<T>(IQuery<IEnumerable<T>> query);
+
+        Task<TOut> Handle(TQuery query);
+    }
+
+    public abstract class QueryHandler<TQuery, TOut> : IQueryHandler<TQuery, TOut>
+    {
+        public Type QueryType => typeof(TQuery);
+        public virtual Task<TOut> Handle(TQuery query)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

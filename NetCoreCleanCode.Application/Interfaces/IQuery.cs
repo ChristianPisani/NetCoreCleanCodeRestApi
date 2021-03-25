@@ -1,6 +1,4 @@
-﻿using System.Collections;
-
-namespace NetCoreCleanCode.Application.Interfaces
+﻿namespace NetCoreCleanCode.Application.Interfaces
 {
-    public interface IQuery<T> { }
+    public interface IQuery { }
 }

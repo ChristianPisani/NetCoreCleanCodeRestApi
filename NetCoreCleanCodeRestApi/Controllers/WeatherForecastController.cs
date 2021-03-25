@@ -1,11 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using NetCoreCleanCode.Application.Interfaces;
 using NetCoreCleanCode.Application.Queries.WeatherForecast;
-using NetCoreCleanCode.Application.Services;
 using NetCoreCleanCode.Domain.WeatherForecast.Models;
 
 namespace NetCoreCleanCodeRestApi.Controllers
@@ -26,11 +23,9 @@ namespace NetCoreCleanCodeRestApi.Controllers
         }
 
         [HttpGet]
-        public async Task<IEnumerable<WeatherForecast>> Get()
+        public async Task<WeatherForecast> Get([FromQuery]GetWeatherForecastsQuery query)
         {
-            var query = new GetWeatherForecastsQuery();
-            
-            var result = await _mediatorService.Send(query);
+            var result = await _mediatorService.Send<GetWeatherForecastsQuery, WeatherForecast>(query);
             
             return result;
         }

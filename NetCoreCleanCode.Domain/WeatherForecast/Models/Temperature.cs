@@ -1,6 +1,8 @@
-﻿namespace NetCoreCleanCode.Domain.WeatherForecast.Models
+﻿using NetCoreCleanCode.Domain.Common.Interfaces;
+
+namespace NetCoreCleanCode.Domain.WeatherForecast.Models
 {
-    public class Temperature
+    public class Temperature : ICoreModel
     {
         public int C { get; private set; }
 

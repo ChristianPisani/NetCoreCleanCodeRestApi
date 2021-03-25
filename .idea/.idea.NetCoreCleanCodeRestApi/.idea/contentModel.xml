@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\christian.thorvik\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\christian.thorvik\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_NetCoreCleanCodeRestApi.-655062779.00" t="ExcludeRecursive" />
+    <e p="C:\Users\christian.thorvik\RiderProjects\NetCoreCleanCodeRestApi" t="IncludeFlat">
+      <e p="NetCoreCleanCode.Application" t="IncludeRecursive">
+        <e p="ApplicationDependencies.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Interfaces" t="Include">
+          <e p="IApiService.cs" t="Include" />
+          <e p="IDataRepository.cs" t="Include" />
+          <e p="IMediatorService.cs" t="Include" />
+          <e p="IQuery.cs" t="Include" />
+          <e p="IQueryHandler.cs" t="Include" />
+          <e p="IQueryHandlerFactory.cs" t="Include" />
+        </e>
+        <e p="NetCoreCleanCode.Application.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="NetCoreCleanCode.Application.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Queries" t="Include">
+          <e p="TodoLists" t="Include">
+            <e p="GetTodoLists" t="Include">
+              <e p="GetTodoListsQuery.cs" t="Include" />
+              <e p="GetTodolistsQueryHandler.cs" t="Include" />
+            </e>
+          </e>
+          <e p="WeatherForecast" t="Include">
+            <e p="GetWeatherForecastsQuery.cs" t="Include" />
+            <e p="GetWeatherForecastsQueryHandler.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Services" t="Include">
+          <e p="MediatorService.cs" t="Include" />
+          <e p="QueryHandlerFactoryService.cs" t="Include" />
+        </e>
+      </e>
+      <e p="NetCoreCleanCode.Domain" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Common" t="Include">
+          <e p="Interfaces" t="Include">
+            <e p="ICoreModel.cs" t="Include" />
+          </e>
+        </e>
+        <e p="NetCoreCleanCode.Domain.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="NetCoreCleanCode.Domain.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="TodoList" t="Include">
+          <e p="Models" t="Include">
+            <e p="TodoItem.cs" t="Include" />
+            <e p="TodoList.cs" t="Include" />
+          </e>
+        </e>
+        <e p="WeatherForecast" t="Include">
+          <e p="Models" t="Include">
+            <e p="Temperature.cs" t="Include" />
+            <e p="WeatherForecast.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="NetCoreCleanCode.Infrastructure" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="InfrastructureDependencies.cs" t="Include" />
+        <e p="NetCoreCleanCode.Infrastructure.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="NetCoreCleanCode.Infrastructure.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="TodoList" t="Include">
+          <e p="Repositories" t="Include">
+            <e p="TodoListRepository.cs" t="Include" />
+          </e>
+          <e p="Services" t="Include">
+            <e p="TodoListService.cs" t="Include" />
+          </e>
+        </e>
+        <e p="WeatherForecast" t="Include">
+          <e p="Services" t="Include">
+            <e p="WeatherForecastApiService.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="NetCoreCleanCodeRestApi" t="IncludeRecursive">
+        <e p="ApiDependencies.cs" t="Include" />
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="TodoListController.cs" t="Include" />
+          <e p="WeatherForecastController.cs" t="Include" />
+        </e>
+        <e p="NetCoreCleanCodeRestApi.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="net5.0" t="Include">
+              <e p="NetCoreCleanCodeRestApi.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="README.md" t="Include" />
+        <e p="Startup.cs" t="Include" />
+      </e>
+      <e p="NetCoreCleanCodeRestApi.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
