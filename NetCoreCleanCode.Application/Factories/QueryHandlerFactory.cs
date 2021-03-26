@@ -2,13 +2,13 @@ using System;
 using Microsoft.Extensions.DependencyInjection;
 using NetCoreCleanCode.Application.Interfaces;
 
-namespace NetCoreCleanCode.Application.Services
+namespace NetCoreCleanCode.Application.Factories
 {
-    public class QueryHandlerFactoryService : IQueryHandlerFactory
+    public class QueryHandlerFactory : IQueryHandlerFactory
     {
         private readonly IServiceProvider _serviceProvider;
 
-        public QueryHandlerFactoryService(IServiceProvider serviceProvider)
+        public QueryHandlerFactory(IServiceProvider serviceProvider)
         {
             _serviceProvider = serviceProvider;
         }

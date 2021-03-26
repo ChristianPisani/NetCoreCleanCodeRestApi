@@ -16,6 +16,9 @@
       <e p="NetCoreCleanCode.Application" t="IncludeRecursive">
         <e p="ApplicationDependencies.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Factories" t="Include">
+          <e p="QueryHandlerFactory.cs" t="Include" />
+        </e>
         <e p="Interfaces" t="Include">
           <e p="IApiService.cs" t="Include" />
           <e p="IDataRepository.cs" t="Include" />
@@ -46,16 +49,10 @@
         </e>
         <e p="Services" t="Include">
           <e p="MediatorService.cs" t="Include" />
-          <e p="QueryHandlerFactoryService.cs" t="Include" />
         </e>
       </e>
       <e p="NetCoreCleanCode.Domain" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Common" t="Include">
-          <e p="Interfaces" t="Include">
-            <e p="ICoreModel.cs" t="Include" />
-          </e>
-        </e>
         <e p="NetCoreCleanCode.Domain.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">

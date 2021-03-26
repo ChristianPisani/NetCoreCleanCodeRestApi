@@ -1,10 +1,4 @@
-﻿using System.Collections.Generic;
-using Microsoft.Extensions.DependencyInjection;
-using NetCoreCleanCode.Application.Interfaces;
-using NetCoreCleanCode.Application.Queries.TodoLists.GetTodoLists;
-using NetCoreCleanCode.Application.Queries.WeatherForecast;
-using NetCoreCleanCode.Domain.TodoList.Models;
-using NetCoreCleanCode.Domain.WeatherForecast.Models;
+﻿using Microsoft.Extensions.DependencyInjection;
 
 namespace NetCoreCleanCodeRestApi
 {
@@ -12,8 +6,7 @@ namespace NetCoreCleanCodeRestApi
     {
         public static void ConfigureApiDependencies(this IServiceCollection services)
         {
-            services.AddScoped<IQueryHandler<GetWeatherForecastsQuery, WeatherForecast>, GetWeatherForecastsQueryHandler>();
-            services.AddScoped<IQueryHandler<GetTodoListsQuery, IEnumerable<TodoList>>, GetTodolistsQueryHandler>();
+            
         }
     }
 }
