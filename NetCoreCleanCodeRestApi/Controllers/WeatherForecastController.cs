@@ -23,9 +23,9 @@ namespace NetCoreCleanCodeRestApi.Controllers
         }
 
         [HttpGet]
-        public async Task<WeatherForecast> Get([FromQuery]GetWeatherForecastsQuery query)
+        public async Task<WeatherForecastModel> Get([FromQuery]GetWeatherForecastsQuery query)
         {
-            var result = await _mediatorService.Send<GetWeatherForecastsQuery, WeatherForecast>(query);
+            var result = await _mediatorService.Send(query);
             
             return result;
         }

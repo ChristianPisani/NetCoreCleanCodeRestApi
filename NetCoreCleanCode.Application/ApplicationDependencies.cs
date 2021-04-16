@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using Microsoft.Extensions.DependencyInjection;
 using NetCoreCleanCode.Application.Factories;
 using NetCoreCleanCode.Application.Interfaces;
@@ -17,8 +18,8 @@ namespace NetCoreCleanCode.Application
             services.AddScoped<IMediatorService, MediatorService>();
             services.AddScoped<IQueryHandlerFactory, QueryHandlerFactory>();
             
-            services.AddScoped<IQueryHandler<GetWeatherForecastsQuery, WeatherForecast>, GetWeatherForecastsQueryHandler>();
-            services.AddScoped<IQueryHandler<GetTodoListsQuery, IEnumerable<TodoList>>, GetTodolistsQueryHandler>();
+            services.AddScoped<IQueryHandler<IQuery<WeatherForecastModel>>, GetWeatherForecastsQueryHandler>();
+            services.AddScoped<IQueryHandler<IQuery<IEnumerable<TodoListModel>>>, GetTodolistsQueryHandler>();
         }
     }
 }

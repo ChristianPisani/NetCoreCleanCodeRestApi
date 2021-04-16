@@ -13,12 +13,12 @@ namespace NetCoreCleanCode.Application.Factories
             _serviceProvider = serviceProvider;
         }
 
-        public IQueryHandler<TQuery, TOut> CreateQueryHandler<TQuery, TOut>()
+        public IQueryHandler<TQuery> CreateQueryHandler<TQuery>() 
         {
             using (var scope = _serviceProvider.CreateScope())
             {
-                return scope.ServiceProvider.GetService(typeof(IQueryHandler<TQuery, TOut>)) as
-                    IQueryHandler<TQuery, TOut>;
+                return scope.ServiceProvider.GetService(typeof(IQueryHandler<TQuery>)) as
+                    IQueryHandler<TQuery>;
             }
         }
     }

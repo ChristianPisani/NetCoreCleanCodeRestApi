@@ -11,12 +11,12 @@ namespace NetCoreCleanCode.Tests.Application.Queries.GetTodoLists
 {
     public class GetTodoListsQueryHandlerTests
     {
-        private readonly Mock<IDataRepository<IEnumerable<TodoList>>> _todoListServiceMock;
+        private readonly Mock<IDataRepository<IEnumerable<TodoListModel>>> _todoListServiceMock;
         private readonly Mock<GetTodoListsQuery> _todoListQueryMock;
 
         public GetTodoListsQueryHandlerTests()
         {
-            _todoListServiceMock = new Mock<IDataRepository<IEnumerable<TodoList>>>();
+            _todoListServiceMock = new Mock<IDataRepository<IEnumerable<TodoListModel>>>();
             _todoListQueryMock = new Mock<GetTodoListsQuery>();
         }
 
@@ -37,9 +37,9 @@ namespace NetCoreCleanCode.Tests.Application.Queries.GetTodoLists
             Assert.AreEqual(FakeTodoList.Count(), result.Count());
         }
 
-        private IEnumerable<TodoList> FakeTodoList => new List<TodoList>()
+        private IEnumerable<TodoListModel> FakeTodoList => new List<TodoListModel>()
         {
-            new TodoList()
+            new TodoListModel()
             {
                 Name = "Todolist",
                 Items = new List<TodoItem>()

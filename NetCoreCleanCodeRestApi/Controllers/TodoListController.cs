@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using NetCoreCleanCode.Application.Interfaces;
+using NetCoreCleanCode.Application.Queries.TodoLists.GetTodoList;
 using NetCoreCleanCode.Application.Queries.TodoLists.GetTodoLists;
 using NetCoreCleanCode.Domain.TodoList.Models;
 
@@ -25,9 +26,16 @@ namespace NetCoreCleanCodeRestApi.Controllers
 
         [HttpGet]
         [Route("TodoLists")]
-        public async Task<IEnumerable<TodoList>> GetLists([FromQuery] GetTodoListsQuery query)
+        public async Task<IEnumerable<TodoListModel>> GetLists([FromQuery] GetTodoListsQuery query)
         {
-            return await _mediatorService.Send<GetTodoListsQuery, IEnumerable<TodoList>>(query);
+            return await _mediatorService.Send(query);
+        }
+        
+        [HttpGet]
+        [Route("TodoList")]
+        public async Task<TodoListModel> GetList([FromQuery] GetTodoListQuery query)
+        {
+            return await _mediatorService.Send(query);
         }
     }
 }

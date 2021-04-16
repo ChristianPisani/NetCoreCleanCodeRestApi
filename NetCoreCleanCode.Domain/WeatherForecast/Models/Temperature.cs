@@ -1,4 +1,6 @@
-﻿namespace NetCoreCleanCode.Domain.WeatherForecast.Models
+﻿using NetCoreCleanCode.Domain.Base;
+
+namespace NetCoreCleanCode.Domain.WeatherForecast.Models
 {
     public class Temperature
     {

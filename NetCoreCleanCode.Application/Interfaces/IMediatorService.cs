@@ -4,7 +4,6 @@ namespace NetCoreCleanCode.Application.Interfaces
 {
     public interface IMediatorService
     {
-        Task<TOut> Send<TQuery, TOut>(TQuery query)
-            where TQuery : IQuery;
+        Task<TOut> Send<TOut>(IQuery<TOut> query) where TOut : class;
     }
 }

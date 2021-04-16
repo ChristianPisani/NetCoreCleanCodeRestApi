@@ -1,4 +1,6 @@
-﻿namespace NetCoreCleanCode.Domain.TodoList.Models
+﻿using NetCoreCleanCode.Domain.Base;
+
+namespace NetCoreCleanCode.Domain.TodoList.Models
 {
     public class TodoItem
     {

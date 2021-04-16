@@ -1,5 +1,6 @@
 ﻿using System.Threading.Tasks;
 using NetCoreCleanCode.Application.Interfaces;
+using NetCoreCleanCode.Domain.Base;
 
 namespace NetCoreCleanCode.Application.Services
 {
@@ -12,9 +13,9 @@ namespace NetCoreCleanCode.Application.Services
             _queryHandlerFactory = queryHandlerFactory;
         }
 
-        public async Task<TOut> Send<TQuery, TOut>(TQuery query) where TQuery : IQuery
+        public async Task<TOut> Send<TOut>(IQuery<TOut> query) where TOut : class
         {
-            var queryHandler = _queryHandlerFactory.CreateQueryHandler<TQuery, TOut>();
+            var queryHandler = _queryHandlerFactory.CreateQueryHandler<IQuery<TOut>>();
 
             if (queryHandler == null)
             {

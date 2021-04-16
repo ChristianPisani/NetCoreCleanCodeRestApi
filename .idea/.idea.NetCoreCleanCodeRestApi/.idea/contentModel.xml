@@ -37,6 +37,10 @@
         </e>
         <e p="Queries" t="Include">
           <e p="TodoLists" t="Include">
+            <e p="GetTodoList" t="Include">
+              <e p="GetTodoListQuery.cs" t="Include" />
+              <e p="GetTodolistQueryHandler.cs" t="Include" />
+            </e>
             <e p="GetTodoLists" t="Include">
               <e p="GetTodoListsQuery.cs" t="Include" />
               <e p="GetTodolistsQueryHandler.cs" t="Include" />
@@ -48,10 +52,14 @@
           </e>
         </e>
         <e p="Services" t="Include">
+          <e p="MediatorResponse.cs" t="Include" />
           <e p="MediatorService.cs" t="Include" />
         </e>
       </e>
       <e p="NetCoreCleanCode.Domain" t="IncludeRecursive">
+        <e p="Base" t="Include">
+          <e p="BaseResponse.cs" t="Include" />
+        </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="NetCoreCleanCode.Domain.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
@@ -64,13 +72,13 @@
         <e p="TodoList" t="Include">
           <e p="Models" t="Include">
             <e p="TodoItem.cs" t="Include" />
-            <e p="TodoList.cs" t="Include" />
+            <e p="TodoListModel.cs" t="Include" />
           </e>
         </e>
         <e p="WeatherForecast" t="Include">
           <e p="Models" t="Include">
             <e p="Temperature.cs" t="Include" />
-            <e p="WeatherForecast.cs" t="Include" />
+            <e p="WeatherForecastModel.cs" t="Include" />
           </e>
         </e>
       </e>
