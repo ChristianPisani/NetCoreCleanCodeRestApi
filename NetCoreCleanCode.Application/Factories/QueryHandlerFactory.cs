@@ -1,12 +1,6 @@
 using System;
-using System.Linq;
-using System.Reflection;
 using Microsoft.Extensions.DependencyInjection;
 using NetCoreCleanCode.Application.Interfaces;
-using NetCoreCleanCode.Application.Queries.TodoLists.GetTodoList;
-using NetCoreCleanCode.Application.Queries.WeatherForecast;
-using NetCoreCleanCode.Domain.Extensions;
-using NetCoreCleanCode.Domain.WeatherForecast.Models;
 
 namespace NetCoreCleanCode.Application.Factories
 {
@@ -19,29 +13,21 @@ namespace NetCoreCleanCode.Application.Factories
             _serviceProvider = serviceProvider;
         }
 
-        public object CreateQueryHandler(Type queryType)
+        public object CreateQueryHandler<TOut>(IQuery<TOut> query)
         {
+            // Cache reflected type
+            // Null checks
+            // Throw errors
+            // Logging
+            
+            var reflectedType = typeof(IQueryHandler<,>).MakeGenericType(query.GetType(), typeof(TOut));
+
             using (var scope = _serviceProvider.CreateScope())
             {
-                var handler = scope.ServiceProvider.GetService(queryType);
-
+                var handler = scope.ServiceProvider.GetService(reflectedType);
+                
                 return handler;
             }
-            
-            /*var handlerType = typeof(IQueryHandler<,>).GetGenericTypeDefinition();
-            
-            var assemblies = AppDomain.CurrentDomain.GetAssemblies();
-            var assemblyTypes = assemblies.SelectMany(assembly => assembly.GetTypes());
-
-            var implementationType = assemblyTypes.FirstOrDefault(assemblyType =>
-                assemblyType.ImplementsGenericInterface(handlerType, queryType));
-
-            if (implementationType == null)
-            {
-                throw new Exception("No query handler implementation found");
-            }
-
-            return Activator.CreateInstance(implementationType);*/
         }
     }
 }

@@ -7,7 +7,7 @@ namespace NetCoreCleanCode.Application.Queries.TodoLists.GetTodoLists
 {
     public class GetTodoListsQuery : IQuery<IEnumerable<TodoListModel>>, IAmount
     {
-        public int Amount { get; }
+        public int Amount { get; set;  }
 
         public GetTodoListsQuery()
         {

@@ -1,19 +1,16 @@
-﻿
-using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using NetCoreCleanCode.Application.Interfaces;
-using NetCoreCleanCode.Application.Queries.TodoLists.GetTodoList;
-using NetCoreCleanCode.Application.Queries.TodoLists.GetTodoLists;
-using NetCoreCleanCode.Domain.Base;
+using NetCoreCleanCode.Application.Interfaces.Parameters;
 using NetCoreCleanCode.Domain.TodoList.Models;
 
 namespace NetCoreCleanCode.Infrastructure.TodoList.Repositories
 {
     public class TodoListRepository 
-        : IDataRepository<GetTodoListsQuery, IEnumerable<TodoListModel>>, 
-            IDataRepository<GetTodoListQuery, TodoListModel>
+        : IDataRepository<IEnumerable<TodoListModel>>, 
+            IDataRepository<TodoListModel>
     {
         private readonly IEnumerable<TodoListModel> TodoLists = new List<TodoListModel>
         {
@@ -37,9 +34,19 @@ namespace NetCoreCleanCode.Infrastructure.TodoList.Repositories
             }
         };
 
-        public async Task<TOutModel> Get<TOutModel>(IQuery<TOutModel> query) where TOutModel : class
+        public async Task<IEnumerable<TodoListModel>> Get(IQuery<IEnumerable<TodoListModel>> query)
         {
-            return TodoLists as TOutModel;
+            return TodoLists;
+        }
+        
+        public async Task<TodoListModel> Get(IQuery<TodoListModel> query)
+        {
+            if (query is IName namedQuery)
+            {
+                return TodoLists.FirstOrDefault(todoList => todoList.Name == namedQuery.Name);
+            }
+
+            throw new Exception("Query must implement IName interface to be used in TodoListRepository - Get");
         }
     }
 }

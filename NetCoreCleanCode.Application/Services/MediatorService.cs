@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Linq;
-using System.Reflection;
-using System.Reflection.Emit;
 using System.Threading.Tasks;
 using NetCoreCleanCode.Application.Interfaces;
-using NetCoreCleanCode.Application.Queries.WeatherForecast;
-using NetCoreCleanCode.Domain.Base;
-using NetCoreCleanCode.Domain.WeatherForecast.Models;
+using NetCoreCleanCode.Domain.Extensions;
 
 namespace NetCoreCleanCode.Application.Services
 {
@@ -20,12 +15,7 @@ namespace NetCoreCleanCode.Application.Services
 
         public async Task<TOut> Send<TOut>(IQuery<TOut> query) where TOut : class
         {
-            var type = 
-                typeof(IQueryHandler<,>).MakeGenericType(query.GetType(), typeof(TOut));
-
-            // type.GetMethod("Handle").MakeGenericMethod(query.GetType()).Invoke( type);
-            
-            var queryHandler = _queryHandlerFactory.CreateQueryHandler(type);
+            var queryHandler = _queryHandlerFactory.CreateQueryHandler(query);
 
             if (queryHandler == null)
             {
@@ -36,14 +26,18 @@ namespace NetCoreCleanCode.Application.Services
                 return default;
             }
 
-            if (!(queryHandler?.GetType()?.GetMethods()?.FirstOrDefault(m => m.Name == "Handle") is MethodInfo handleMethod))
+            try
             {
-                throw new Exception("Query handler not convertible");
+                var handleMethod = queryHandler?.InvokeMethod<Task<TOut>>("Handle", query);
+
+                var result = await handleMethod;
+
+                return result;
             }
-
-            var result = await (Task<TOut>)handleMethod.Invoke(queryHandler, new object?[] { query });
-
-            return result;
+            catch (Exception e)
+            {
+                throw new Exception("Query handler does not have Handle method", e);
+            }
         }
     }
 }

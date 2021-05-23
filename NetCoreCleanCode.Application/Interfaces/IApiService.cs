@@ -2,9 +2,8 @@
 
 namespace NetCoreCleanCode.Application.Interfaces
 {
-    public interface IApiService<in TQuery, TOut> 
-        where TQuery : IQuery<TOut>
+    public interface IApiService<TOut> where TOut : class
     {
-        Task<TOutModel> Get<TOutModel>(IQuery<TOutModel> query) where TOutModel : class;
+        Task<TOut> Get(IQuery<TOut> query);
     }
 }

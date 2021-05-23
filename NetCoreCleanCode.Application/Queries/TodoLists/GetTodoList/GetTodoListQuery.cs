@@ -5,18 +5,18 @@ using NetCoreCleanCode.Domain.TodoList.Models;
 
 namespace NetCoreCleanCode.Application.Queries.TodoLists.GetTodoList
 {
-    public class GetTodoListQuery : IQuery<TodoListModel>, IAmount
+    public class GetTodoListQuery : IQuery<TodoListModel>, IName
     {
-        public int Amount { get; }
+        public string Name { get; set; }
 
         public GetTodoListQuery()
         {
-            Amount = 0;
+            Name = "Default";
         }
 
-        public GetTodoListQuery(int amount)
+        public GetTodoListQuery(string name)
         {
-            Amount = amount;
+            Name = name;
         }
     }
 }

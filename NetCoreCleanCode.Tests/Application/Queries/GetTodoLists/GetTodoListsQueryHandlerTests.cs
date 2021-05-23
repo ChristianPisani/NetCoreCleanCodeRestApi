@@ -30,7 +30,9 @@ namespace NetCoreCleanCode.Tests.Application.Queries.GetTodoLists
         {
             var target = GetTarget();
 
-            _todoListServiceMock.Setup(x => x.Get()).Returns(Task.FromResult(FakeTodoList));
+            _todoListServiceMock.Setup(x => x.Get(
+                It.IsAny<IQuery<IEnumerable<TodoListModel>>>()))
+                .Returns(Task.FromResult(FakeTodoList));
 
             var result = await target.Handle(_todoListQueryMock.Object);
 

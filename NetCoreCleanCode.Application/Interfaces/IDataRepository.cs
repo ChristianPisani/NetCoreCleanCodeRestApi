@@ -2,9 +2,8 @@
 
 namespace NetCoreCleanCode.Application.Interfaces
 {
-    public interface IDataRepository<in TQuery, TOut> 
-        where TQuery : IQuery<TOut>
+    public interface IDataRepository<TOut> where TOut : class
     {
-        Task<TOutModel> Get<TOutModel>(IQuery<TOutModel> query) where TOutModel : class;
+        Task<TOut> Get(IQuery<TOut> query);
     }
 }

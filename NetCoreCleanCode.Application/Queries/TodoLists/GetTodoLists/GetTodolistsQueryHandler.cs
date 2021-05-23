@@ -5,16 +5,16 @@ using NetCoreCleanCode.Domain.TodoList.Models;
 
 namespace NetCoreCleanCode.Application.Queries.TodoLists.GetTodoLists
 {
-    public class GetTodolistsQueryHandler : QueryHandler<GetTodoListsQuery, IEnumerable<TodoListModel>>
+    public class GetTodolistsQueryHandler : IQueryHandler<GetTodoListsQuery, IEnumerable<TodoListModel>>
     {
-        private readonly IDataRepository<GetTodoListsQuery, IEnumerable<TodoListModel>> _todoListService;
+        private readonly IDataRepository<IEnumerable<TodoListModel>> _todoListService;
 
-        public GetTodolistsQueryHandler(IDataRepository<GetTodoListsQuery, IEnumerable<TodoListModel>> todoListService)
+        public GetTodolistsQueryHandler(IDataRepository<IEnumerable<TodoListModel>> todoListService)
         {
             _todoListService = todoListService;
         }
 
-        public override async Task<IEnumerable<TodoListModel>> Handle(GetTodoListsQuery query)
+        public async Task<IEnumerable<TodoListModel>> Handle(GetTodoListsQuery query)
         {
             var s = query is IQuery<IEnumerable<TodoListModel>> t;
             
