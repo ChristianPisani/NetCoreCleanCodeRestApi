@@ -1,12 +1,13 @@
 ﻿using System.Collections.Generic;
 using NetCoreCleanCode.Application.Interfaces;
+using NetCoreCleanCode.Application.Interfaces.Parameters;
 using NetCoreCleanCode.Domain.TodoList.Models;
 
 namespace NetCoreCleanCode.Application.Queries.TodoLists.GetTodoLists
 {
-    public class GetTodoListsQuery : IQuery<IEnumerable<TodoListModel>>
+    public class GetTodoListsQuery : IQuery<IEnumerable<TodoListModel>>, IAmount
     {
-        public int Amount { get; private set; }
+        public int Amount { get; }
 
         public GetTodoListsQuery()
         {

@@ -1,7 +1,9 @@
+using System;
+
 namespace NetCoreCleanCode.Application.Interfaces
 {
     public interface IQueryHandlerFactory
     {
-        IQueryHandler<TQuery> CreateQueryHandler<TQuery>();
+        object CreateQueryHandler(Type t);
     }
 }

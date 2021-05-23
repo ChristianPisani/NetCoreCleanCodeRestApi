@@ -1,4 +1,4 @@
 ﻿namespace NetCoreCleanCode.Application.Interfaces
 {
-    public interface IQuery<T> { }
+    public interface IQuery<out T> { }
 }

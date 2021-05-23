@@ -5,7 +5,7 @@ using NetCoreCleanCode.Domain.WeatherForecast.Models;
 
 namespace NetCoreCleanCode.Application.Queries.WeatherForecast
 {
-    public class GetWeatherForecastsQueryHandler : IQueryHandler<IQuery<WeatherForecastModel>>
+    public class GetWeatherForecastsQueryHandler : QueryHandler<GetWeatherForecastsQuery, WeatherForecastModel>
      {
         private readonly IApiService<GetWeatherForecastsQuery, WeatherForecastModel> _apiService;
         
@@ -14,7 +14,7 @@ namespace NetCoreCleanCode.Application.Queries.WeatherForecast
             _apiService = apiService;
         }
 
-        public async Task<TOut> Handle<TOut>(IQuery<TOut> query) where TOut : class
+        public override async Task<WeatherForecastModel> Handle(GetWeatherForecastsQuery query)
         {
             return await _apiService.Get(query);
         }
