@@ -6,28 +6,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3689a9d4-9469-4ebb-9651-1f24b2a01cd0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/NetCoreCleanCode.Domain/Extensions/ObjectExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.NetCoreCleanCodeRestApi/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NetCoreCleanCodeRestApi/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NetCoreCleanCodeRestApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NetCoreCleanCodeRestApi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetCoreCleanCode.Application/ApplicationDependencies.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCode.Application/ApplicationDependencies.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NetCoreCleanCode.Application/Factories/QueryHandlerFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCode.Application/Factories/QueryHandlerFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetCoreCleanCode.Application/Interfaces/IApiService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCode.Application/Interfaces/IApiService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetCoreCleanCode.Application/Interfaces/IDataRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCode.Application/Interfaces/IDataRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetCoreCleanCode.Application/Interfaces/IQueryHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCode.Application/Interfaces/IQueryHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetCoreCleanCode.Application/Interfaces/IQueryHandlerFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCode.Application/Interfaces/IQueryHandlerFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetCoreCleanCode.Application/Interfaces/Parameters/QueryParameters.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCode.Application/Interfaces/Parameters/QueryParameters.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetCoreCleanCode.Application/Queries/TodoLists/GetTodoList/GetTodoListQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCode.Application/Queries/TodoLists/GetTodoList/GetTodoListQuery.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetCoreCleanCode.Application/Queries/TodoLists/GetTodoList/GetTodolistQueryHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCode.Application/Queries/TodoLists/GetTodoList/GetTodolistQueryHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetCoreCleanCode.Application/Queries/TodoLists/GetTodoLists/GetTodoListsQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCode.Application/Queries/TodoLists/GetTodoLists/GetTodoListsQuery.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetCoreCleanCode.Application/Queries/TodoLists/GetTodoLists/GetTodolistsQueryHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCode.Application/Queries/TodoLists/GetTodoLists/GetTodolistsQueryHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetCoreCleanCode.Application/Queries/WeatherForecast/GetWeatherForecastsQueryHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCode.Application/Queries/WeatherForecast/GetWeatherForecastsQueryHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetCoreCleanCode.Application/Services/MediatorService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCode.Application/Services/MediatorService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetCoreCleanCode.Infrastructure/InfrastructureDependencies.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCode.Infrastructure/InfrastructureDependencies.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetCoreCleanCode.Infrastructure/TodoList/Repositories/TodoListRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCode.Infrastructure/TodoList/Repositories/TodoListRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetCoreCleanCode.Infrastructure/TodoList/Services/TodoListService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCode.Infrastructure/TodoList/Services/TodoListService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetCoreCleanCode.Infrastructure/WeatherForecast/Services/WeatherForecastApiService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCode.Infrastructure/WeatherForecast/Services/WeatherForecastApiService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetCoreCleanCode.Tests/Application/Queries/GetTodoLists/GetTodoListsQueryHandlerTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCode.Tests/Application/Queries/GetTodoLists/GetTodoListsQueryHandlerTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetCoreCleanCode.Tests/Infrastructure/TodoList/TodoListRepositoryTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCode.Tests/Infrastructure/TodoList/TodoListRepositoryTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetCoreCleanCodeRestApi/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreCleanCodeRestApi/Startup.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +64,6 @@
       <option value="$PROJECT_DIR$/NetCoreCleanCode.Domain/WeatherForecast/Models/WeatherForecastModel.cs" />
       <option value="$PROJECT_DIR$/NetCoreCleanCode.Domain/WeatherForecast/Models/Temperature.cs" />
       <option value="$PROJECT_DIR$/NetCoreCleanCode.Domain/TodoList/Models/TodoListModel.cs" />
-      <option value="$PROJECT_DIR$/NetCoreCleanCodeRestApi/Startup.cs" />
       <option value="$PROJECT_DIR$/NetCoreCleanCode.Application/Interfaces/IQuery.cs" />
       <option value="$PROJECT_DIR$/NetCoreCleanCode.Application/Interfaces/IMediatorService.cs" />
       <option value="$PROJECT_DIR$/NetCoreCleanCode.Application/Interfaces/IDataRepository.cs" />
@@ -103,11 +83,12 @@
       <option value="$PROJECT_DIR$/NetCoreCleanCode.Application/Queries/TodoLists/GetTodoList/GetTodolistQueryHandler.cs" />
       <option value="$PROJECT_DIR$/NetCoreCleanCode.Application/Interfaces/IQueryHandler.cs" />
       <option value="$PROJECT_DIR$/NetCoreCleanCode.Application/ApplicationDependencies.cs" />
-      <option value="$PROJECT_DIR$/NetCoreCleanCode.Application/Factories/QueryHandlerFactory.cs" />
       <option value="$PROJECT_DIR$/NetCoreCleanCode.Application/Interfaces/IQueryHandlerFactory.cs" />
       <option value="$PROJECT_DIR$/NetCoreCleanCode.Application/Services/MediatorService.cs" />
       <option value="$PROJECT_DIR$/NetCoreCleanCode.Domain/Extensions/TypeExtensions.cs" />
       <option value="$PROJECT_DIR$/NetCoreCleanCode.Domain/Extensions/ObjectExtensions.cs" />
+      <option value="$PROJECT_DIR$/NetCoreCleanCodeRestApi/Startup.cs" />
+      <option value="$PROJECT_DIR$/NetCoreCleanCode.Application/Factories/QueryHandlerFactory.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1qC8GpRCGDyNs7QOFHkmYopoQMF" />
@@ -125,7 +106,11 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.NetCoreCleanCodeRestApi">
+  <component name="RunManager" selected="Publish to folder.Publish NetCoreCleanCodeRestApi to folder">
+    <configuration name="Publish NetCoreCleanCodeRestApi to folder" type="DotNetFolderPublish" factoryName="Publish to folder" temporary="true">
+      <riderPublish runtime="linux-x64" target_folder="$PROJECT_DIR$/NetCoreCleanCodeRestApi/Publish" target_framework="net5.0" uuid_high="418496270177027309" uuid_low="-8695948454968270535" />
+      <method v="2" />
+    </configuration>
     <configuration name="NetCoreCleanCodeRestApi" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/NetCoreCleanCodeRestApi/NetCoreCleanCodeRestApi.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net5.0" />
@@ -186,6 +171,11 @@
         <option name="Build" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Publish to folder.Publish NetCoreCleanCodeRestApi to folder" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -200,7 +190,10 @@
       <workItem from="1616672713070" duration="10642000" />
       <workItem from="1617822202140" duration="697000" />
       <workItem from="1618556572431" duration="11223000" />
-      <workItem from="1620927253644" duration="40866000" />
+      <workItem from="1620927253644" duration="41543000" />
+      <workItem from="1622041749622" duration="5289000" />
+      <workItem from="1628677287254" duration="310000" />
+      <workItem from="1629101075894" duration="331000" />
     </task>
     <servers />
   </component>
@@ -229,13 +222,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/NetCoreCleanCode.Application/Factories/QueryHandlerFactory.cs</url>
-          <line>26</line>
+          <line>27</line>
           <properties documentPath="C:\Users\christian.thorvik\RiderProjects\NetCoreCleanCodeRestApi\NetCoreCleanCode.Application\Factories\QueryHandlerFactory.cs" initialLine="31" containingFunctionPresentation="method 'CreateQueryHandler'">
             <startOffsets>
-              <option value="832" />
+              <option value="870" />
             </startOffsets>
             <endOffsets>
-              <option value="891" />
+              <option value="929" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="11" />

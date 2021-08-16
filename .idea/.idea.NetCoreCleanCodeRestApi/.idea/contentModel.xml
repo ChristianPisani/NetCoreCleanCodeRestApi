@@ -158,6 +158,25 @@
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
         </e>
+        <e p="Publish" t="Include">
+          <e p="appsettings.Development.json" t="Include" />
+          <e p="appsettings.json" t="Include" />
+          <e p="Microsoft.OpenApi.dll" t="Include" />
+          <e p="NetCoreCleanCode.Application.dll" t="Include" />
+          <e p="NetCoreCleanCode.Application.pdb" t="Include" />
+          <e p="NetCoreCleanCode.Domain.dll" t="Include" />
+          <e p="NetCoreCleanCode.Domain.pdb" t="Include" />
+          <e p="NetCoreCleanCode.Infrastructure.dll" t="Include" />
+          <e p="NetCoreCleanCode.Infrastructure.pdb" t="Include" />
+          <e p="NetCoreCleanCodeRestApi" t="Include" />
+          <e p="NetCoreCleanCodeRestApi.deps.json" t="Include" />
+          <e p="NetCoreCleanCodeRestApi.dll" t="Include" />
+          <e p="NetCoreCleanCodeRestApi.pdb" t="Include" />
+          <e p="NetCoreCleanCodeRestApi.runtimeconfig.json" t="Include" />
+          <e p="Swashbuckle.AspNetCore.Swagger.dll" t="Include" />
+          <e p="Swashbuckle.AspNetCore.SwaggerGen.dll" t="Include" />
+          <e p="Swashbuckle.AspNetCore.SwaggerUI.dll" t="Include" />
+        </e>
         <e p="Startup.cs" t="Include" />
       </e>
       <e p="NetCoreCleanCodeRestApi.sln" t="IncludeFlat" />
